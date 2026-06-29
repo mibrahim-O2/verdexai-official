@@ -2,7 +2,7 @@ import { initializeApp, getApps } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCR-Lxk5fN0Y8eCX1JGzNKFRFkdrNBG-Xc",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
   authDomain: "verdexai.firebaseapp.com",
   projectId: "verdexai",
   storageBucket: "verdexai.firebasestorage.app",
