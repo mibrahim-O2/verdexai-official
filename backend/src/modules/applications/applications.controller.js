@@ -1,7 +1,47 @@
 const Application = require("../../models/Application");
 const JobPost = require("../../models/JobPost");
+const User = require("../../models/User");
 const asyncHandler = require("../../utils/asyncHandler");
 const { extractTextFromPdf, parseCvText, scoreCandidateAgainstJob } = require("../../modules/ai/ai.service");
+const nodemailer = require("nodemailer");
+
+function createTransporter() {
+  return nodemailer.createTransport({
+    host: process.env.EMAIL_HOST,
+    port: parseInt(process.env.EMAIL_PORT),
+    secure: false,
+    auth: {
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
+    },
+  });
+}
+
+async function sendInterviewNotification(candidate, job) {
+  if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) return;
+  try {
+    const transporter = createTransporter();
+    await transporter.sendMail({
+      from: `"VerdexAI" <${process.env.EMAIL_USER}>`,
+      to: candidate.email,
+      subject: `Interview Scheduled — ${job.title} at VerdexAI`,
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <h2 style="color: #2563eb;">Congratulations, ${candidate.name}!</h2>
+          <p>Your application for <strong>${job.title}</strong> (${job.department}) has progressed to the interview stage.</p>
+          <p>The HR team will be in touch shortly with interview details including date, time, and format.</p>
+          <div style="margin: 24px 0; padding: 16px; background: #f0f9ff; border-radius: 8px; border-left: 4px solid #2563eb;">
+            <p style="margin: 0; font-weight: bold;">Next Steps:</p>
+            <p style="margin: 8px 0 0;">Log in to your VerdexAI dashboard to track your application status and check for any assessment tests assigned to you.</p>
+          </div>
+          <p style="color: #6b7280; font-size: 12px;">This is an automated notification from VerdexAI.</p>
+        </div>
+      `,
+    });
+  } catch (err) {
+    console.error("Failed to send interview notification email:", err.message);
+  }
+}
 
 // POST /api/v1/applications   (Candidate only, multipart/form-data with "cv" file field)
 const submitApplication = asyncHandler(async (req, res) => {
@@ -107,8 +147,17 @@ const updateApplicationStatus = asyncHandler(async (req, res) => {
     return res.status(403).json({ success: false, error: "Not authorized to modify this application." });
   }
 
+  const previousStatus = application.status;
   application.status = status;
   await application.save();
+
+  // Send email notification when interview is scheduled
+  if (status === "interview_scheduled" && previousStatus !== "interview_scheduled") {
+    const candidate = await User.findById(application.candidateId);
+    if (candidate) {
+      sendInterviewNotification(candidate, application.jobPostId);
+    }
+  }
 
   res.json({ success: true, application });
 });

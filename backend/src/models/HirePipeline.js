@@ -21,4 +21,4 @@ const hirePipelineSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("HirePipeline", hirePipelineSchema);
+module.exports = mongoose.models.HirePipeline || mongoose.model("HirePipeline", hirePipelineSchema);

@@ -6,6 +6,7 @@ import Script from "next/script";
 import config from "../lib/config";
 import BrandLogo from "../components/shared/BrandLogo";
 import "./landing.css";
+import XLogo from "../components/icons/XLogo";
 
 export default function LandingPage() {
   const [isDark, setIsDark] = useState(false);
@@ -290,27 +291,74 @@ export default function LandingPage() {
                 <a href="https://linkedin.com/in/muhammad-ibrahim-o2" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
                   <i className="fab fa-linkedin-in"></i>
                 </a>
-                <a href="https://wa.me/0000000000" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="WhatsApp">
-                  <i className="fab fa-whatsapp"></i>
+                <a href="https://x.com/MIbraheem_02" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="X (Twitter)">
+                  <XLogo className="w-4 h-4" />
                 </a>
-                <a href="https://facebook.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Facebook">
+                <a href="https://www.facebook.com/profile.php?id=100085369586705" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Facebook">
                   <i className="fab fa-facebook-f"></i>
                 </a>
                 <a href="mailto:mibrahimkhalid306@gmail.com" className="social-link" aria-label="Email">
                   <i className="fas fa-envelope"></i>
                 </a>
+                <a href="tel:+923242991303" className="social-link" aria-label="Phone">
+                  <i className="fas fa-phone"></i>
+                </a>
               </div>
             </div>
 
             <div className="hero-image-container" data-aos="zoom-in" data-aos-duration="1000">
-              <div className="hero-image-wrapper">
-                <div className="hero-image-bg"></div>
-                <img
-                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=900&fit=crop"
-                  alt="VerdexAI"
-                  className="hero-image"
-                />
-                <div className="hero-image-decoration">AI</div>
+              <div className="hero-visual-wrapper">
+                <svg viewBox="0 0 500 500" className="hero-visual-svg" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="oklch(0.58 0.24 258)" />
+                      <stop offset="100%" stopColor="oklch(0.65 0.2 230)" />
+                    </linearGradient>
+                    <radialGradient id="heroGlow" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stopColor="oklch(0.58 0.24 258)" stopOpacity="0.35" />
+                      <stop offset="100%" stopColor="oklch(0.58 0.24 258)" stopOpacity="0" />
+                    </radialGradient>
+                  </defs>
+
+                  <circle cx="250" cy="250" r="220" fill="url(#heroGlow)" />
+
+                  {/* Neural circuit lines */}
+                  <g stroke="url(#heroGrad)" strokeWidth="1.5" opacity="0.55" fill="none">
+                    <path d="M60 120 L180 180 L260 130 L380 190" className="circuit-line" />
+                    <path d="M70 350 L170 300 L250 340 L370 280" className="circuit-line" />
+                    <path d="M120 60 L180 180 L150 280 L200 400" className="circuit-line" />
+                    <path d="M420 90 L320 170 L350 280 L300 410" className="circuit-line" />
+                    <path d="M250 250 L150 280 L120 60" className="circuit-line" />
+                    <path d="M250 250 L350 280 L420 90" className="circuit-line" />
+                  </g>
+
+                  {/* Circuit nodes */}
+                  <g fill="url(#heroGrad)">
+                    <circle cx="60" cy="120" r="5" className="circuit-node" />
+                    <circle cx="180" cy="180" r="5" className="circuit-node" />
+                    <circle cx="260" cy="130" r="5" className="circuit-node" />
+                    <circle cx="380" cy="190" r="5" className="circuit-node" />
+                    <circle cx="70" cy="350" r="5" className="circuit-node" />
+                    <circle cx="170" cy="300" r="5" className="circuit-node" />
+                    <circle cx="250" cy="340" r="5" className="circuit-node" />
+                    <circle cx="370" cy="280" r="5" className="circuit-node" />
+                    <circle cx="150" cy="280" r="5" className="circuit-node" />
+                    <circle cx="200" cy="400" r="5" className="circuit-node" />
+                    <circle cx="320" cy="170" r="5" className="circuit-node" />
+                    <circle cx="350" cy="280" r="5" className="circuit-node" />
+                    <circle cx="300" cy="410" r="5" className="circuit-node" />
+                    <circle cx="120" cy="60" r="5" className="circuit-node" />
+                    <circle cx="420" cy="90" r="5" className="circuit-node" />
+                  </g>
+
+                  {/* Central VerdexAI mark */}
+                  <g transform="translate(250,250)">
+                    <circle r="70" fill="oklch(0.16 0.04 250)" stroke="url(#heroGrad)" strokeWidth="2" className="hero-pulse-ring" />
+                    <path d="M-35 -25 L-5 35 L5 20 L-25 -25 Z" fill="url(#heroGrad)" />
+                    <path d="M35 -25 L5 35 L-5 20 L25 -25 Z" fill="url(#heroGrad)" opacity="0.6" />
+                  </g>
+                </svg>
+                <p className="hero-visual-label">VerdexAI Intelligence Engine</p>
               </div>
             </div>
           </div>
@@ -485,21 +533,50 @@ export default function LandingPage() {
         <div className="container">
           <div className="section-title-container">
             <h2 className="section-title">The Developer</h2>
-            <p className="section-description">VerdexAI is designed and built by Muhammad Ibrahim.</p>
+            <p className="section-description">VerdexAI is designed, engineered, and maintained by Muhammad Ibrahim.</p>
           </div>
 
-          <div className="team-grid" style={{ gridTemplateColumns: "minmax(280px, 360px)", justifyContent: "center" }}>
-            <div className="team-card" data-aos="fade-up" data-aos-duration="1000">
+          <div className="developer-grid">
+            <div className="team-card developer-card" data-aos="fade-up" data-aos-duration="1000">
               <div className="team-img-container">
                 <img src="https://github.com/mibrahim-O2.png" alt="Muhammad Ibrahim" className="team-img" />
               </div>
               <h3 className="team-name">Muhammad Ibrahim</h3>
               <p className="team-role">Full Stack & AI Engineer</p>
+
+              <p className="developer-bio" style = {{ textAlign: "justify" }}>
+                BS Computer Science student at the Institute of Mathematics and Computer
+                Science (IMCS), University of Sindh. Builds AI native, production-grade software
+                from real client facing systems to research driven academic projects with a focus on
+                clean architecture and practical AI integration rather than isolated experiments.
+              </p>
+
+              <div className="developer-highlights">
+                <div className="developer-highlight">
+                  <i className="fas fa-brain"></i>
+                  <span style = {{ textAlign: "justify", display: "block" }}>
+                    <strong>AI Tutor for Personalized Learning Recommendations (PLR)</strong> Project Lead, AI Lab Project 
+                    Led a team building a Streamlit based AI Tutor that analyzes quiz performance and generates
+                    personalized study recommendations, comparing a Rule-Based Engine against a tuned Decision Tree Classifier
+                    (~85% accuracy) evaluated with Accuracy, Precision, Recall, F1-Score, and a Confusion Matrix with a full
+                    explainability module logging step-by-step reasoning for every prediction.
+                  </span>
+                </div>
+                <div className="developer-highlight">
+                  <i className="fas fa-code-branch"></i>
+                  <span>Comfortable across the full AI/ML stack LLM integration, vector databases, embeddings and modern full-stack web development</span>
+                </div>
+                <div className="developer-highlight">
+                  <i className="fas fa-seedling"></i>
+                  <span>Designed and deployed a real production system for a family dairy farm business, in active monthly use</span>
+                </div>
+              </div>
+
               <div className="team-social">
                 <a href="https://linkedin.com/in/muhammad-ibrahim-o2" target="_blank" className="team-social-link" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/mibrahim-O2" target="_blank" className="team-social-link" aria-label="GitHub"><i className="fab fa-github"></i></a>
-                <a href="https://wa.me/0000000000" target="_blank" className="team-social-link" aria-label="WhatsApp"><i className="fab fa-whatsapp"></i></a>
-                <a href="https://facebook.com/yourusername" target="_blank" className="team-social-link" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/MIbraheem_02" target="_blank" className="team-social-link" aria-label="X (Twitter)"><XLogo className="w-4 h-4" /></a>
+                <a href="https://www.facebook.com/profile.php?id=100085369586705" target="_blank" className="team-social-link" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
               </div>
             </div>
           </div>
@@ -526,17 +603,24 @@ export default function LandingPage() {
                   </div>
                 </div>
                 <div className="contact-info-item">
-                  <div className="contact-info-icon"><i className="fab fa-whatsapp"></i></div>
+                  <div className="contact-info-icon"><i className="fas fa-phone"></i></div>
                   <div className="contact-info-content">
-                    <h3>WhatsApp</h3>
-                    <a href="https://wa.me/0000000000" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+                    <h3>Phone</h3>
+                    <a href="tel:+923242991303">+92 324 2991303</a>
+                  </div>
+                </div>
+                <div className="contact-info-item">
+                  <div className="contact-info-icon"><XLogo className="w-4 h-4" /></div>
+                  <div className="contact-info-content">
+                    <h3>X (Twitter)</h3>
+                    <a href="https://x.com/MIbraheem_02" target="_blank" rel="noopener noreferrer">@MIbraheem_02</a>
                   </div>
                 </div>
                 <div className="contact-info-item">
                   <div className="contact-info-icon"><i className="fab fa-facebook-f"></i></div>
                   <div className="contact-info-content">
                     <h3>Facebook</h3>
-                    <a href="https://facebook.com/yourusername" target="_blank" rel="noopener noreferrer">facebook.com/yourusername</a>
+                    <a href="https://www.facebook.com/profile.php?id=100085369586705" target="_blank" rel="noopener noreferrer">View Profile</a>
                   </div>
                 </div>
                 <div className="contact-info-item">
@@ -666,8 +750,8 @@ export default function LandingPage() {
               <div className="footer-social">
                 <a href="https://github.com/mibrahim-O2" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="GitHub"><i className="fab fa-github"></i></a>
                 <a href="https://linkedin.com/in/muhammad-ibrahim-o2" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
-                <a href="https://wa.me/0000000000" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="WhatsApp"><i className="fab fa-whatsapp"></i></a>
-                <a href="https://facebook.com/yourusername" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/MIbraheem_02" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="X (Twitter)"> <XLogo className="w-4 h-4" /> </a>
+                <a href="https://www.facebook.com/profile.php?id=100085369586705" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
               </div>
             </div>
 
@@ -687,8 +771,9 @@ export default function LandingPage() {
               <h3 className="footer-heading">Contact Info</h3>
               <div className="footer-links">
                 <a href="mailto:mibrahimkhalid306@gmail.com" className="footer-link"><i className="fas fa-envelope"></i> mibrahimkhalid306@gmail.com</a>
-                <a href="https://wa.me/0000000000" target="_blank" rel="noopener noreferrer" className="footer-link"><i className="fab fa-whatsapp"></i> WhatsApp</a>
-                <a href="https://facebook.com/yourusername" target="_blank" rel="noopener noreferrer" className="footer-link"><i className="fab fa-facebook-f"></i> Facebook</a>
+                <a href="tel:+923242991303" className="footer-link"><i className="fas fa-phone"></i> +92 324 2991303</a>
+                <a href="https://x.com/MIbraheem_02" target="_blank" rel="noopener noreferrer" className="footer-link"> <XLogo className="w-4 h-4" />  X (Twitter)</a>
+                <a href="https://www.facebook.com/profile.php?id=100085369586705" target="_blank" rel="noopener noreferrer" className="footer-link"><i className="fab fa-facebook-f"></i> Facebook</a>
                 <span className="footer-link" style={{ cursor: "default" }}><i className="fas fa-map-marker-alt"></i> Jamshoro, Sindh, Pakistan</span>
               </div>
             </div>

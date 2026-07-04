@@ -20,6 +20,7 @@
     "firebase-admin": "^14.1.0",
     "mongoose": "^8.24.1",
     "multer": "^2.2.0",
+    "nodemailer": "^9.0.3",
     "openai": "^6.45.0",
     "pdf-parse": "^1.1.1"
   },

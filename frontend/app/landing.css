@@ -383,3 +383,160 @@
 .footer-link:hover { color: var(--primary); }
 .footer-bottom { text-align: center; border-top: 1px solid var(--border); padding-top: 1.5rem; }
 .footer-copyright { color: var(--muted-foreground); font-size: 0.85rem; margin: 0; }
+/* Hero animated visual */
+.hero-visual-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.hero-visual-svg {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+}
+.circuit-line {
+  stroke-dasharray: 6 4;
+  animation: circuitFlow 6s linear infinite;
+}
+@keyframes circuitFlow {
+  to { stroke-dashoffset: -200; }
+}
+.circuit-node {
+  animation: nodePulse 2.4s ease-in-out infinite;
+}
+.circuit-node:nth-child(odd) { animation-delay: 0.6s; }
+.circuit-node:nth-child(3n) { animation-delay: 1.2s; }
+@keyframes nodePulse {
+  0%, 100% { opacity: 0.6; r: 4; }
+  50% { opacity: 1; r: 6; }
+}
+.hero-pulse-ring {
+  animation: ringPulse 2.8s ease-in-out infinite;
+  transform-origin: center;
+}
+@keyframes ringPulse {
+  0%, 100% { stroke-opacity: 0.4; }
+  50% { stroke-opacity: 1; }
+}
+.hero-visual-label {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+  font-weight: 600;
+}
+
+/* Developer section */
+.developer-grid {
+  display: flex;
+  justify-content: center;
+}
+.developer-card {
+  max-width: 640px;
+  text-align: left;
+  padding: 2.5rem;
+}
+.developer-card .team-img-container { margin: 0 auto 1.25rem; }
+.developer-card .team-name,
+.developer-card .team-role { text-align: center; }
+.developer-bio {
+  color: var(--muted-foreground);
+  line-height: 1.7;
+  margin: 1.25rem 0 1.5rem;
+  text-align: left;
+}
+.developer-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.75rem;
+}
+.developer-highlight {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  font-size: 0.9rem;
+  color: var(--foreground);
+}
+.developer-highlight i {
+  color: var(--primary);
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+.developer-card .team-social { justify-content: flex-start; }
+
+/* Enhanced neon pulse glow - like NeuroHire */
+.hero-pulse-ring {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px oklch(0.65 0.2 230 / 0.6));
+  }
+  50% {
+    filter: drop-shadow(0 0 22px oklch(0.65 0.2 230 / 0.95))
+            drop-shadow(0 0 40px oklch(0.58 0.24 258 / 0.6));
+  }
+}
+
+.circuit-node {
+  animation: nodeGlow 2.2s ease-in-out infinite;
+}
+
+@keyframes nodeGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px currentColor);
+    opacity: 0.8;
+  }
+  50% {
+    filter: drop-shadow(0 0 8px currentColor);
+    opacity: 1;
+  }
+}
+
+.circuit-line {
+  animation: lineGlow 3s ease-in-out infinite;
+}
+
+@keyframes lineGlow {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+.hero-visual-svg g[transform] circle {
+  animation: coreGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes coreGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px oklch(0.58 0.24 258 / 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 25px oklch(0.65 0.2 230 / 0.9));
+  }
+}
+
+.hero-pulse-ring {
+  animation: ringPulse 2.5s ease-in-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes ringPulse {
+  0%, 100% {
+    stroke-width: 2;
+    filter: drop-shadow(0 0 6px oklch(0.65 0.2 230 / 0.5));
+  }
+  50% {
+    stroke-width: 4;
+    filter: drop-shadow(0 0 25px oklch(0.65 0.2 230 / 1))
+            drop-shadow(0 0 45px oklch(0.58 0.24 258 / 0.7));
+  }
+}

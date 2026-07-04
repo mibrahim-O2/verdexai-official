@@ -34,4 +34,4 @@ applicationSchema.index({ candidateId: 1, jobPostId: 1 }, { unique: true });
 applicationSchema.index({ jobPostId: 1, aiScore: -1 });
 applicationSchema.index({ candidateId: 1, createdAt: -1 });
 
-module.exports = mongoose.model("Application", applicationSchema);
+module.exports = mongoose.models.Application || mongoose.model("Application", applicationSchema);

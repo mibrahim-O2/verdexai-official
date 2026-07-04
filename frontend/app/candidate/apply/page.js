@@ -6,6 +6,7 @@ import DashboardShell from "../../../components/shared/DashboardShell";
 import LoadingSpinner from "../../../components/shared/LoadingSpinner";
 import { IconHome, IconBriefcase, IconClipboard } from "../../../components/icons/NavIcons";
 import config from "../../../lib/config";
+import { useAuth } from "../../../lib/authContext";
 
 const navItems = [
   { href: "/candidate/dashboard", label: "Dashboard", icon: <IconHome /> },
@@ -13,7 +14,84 @@ const navItems = [
   { href: "/candidate/onboarding", label: "Onboarding", icon: <IconClipboard /> },
 ];
 
+function CvProfileCard({ firebaseUser }) {
+  const [parsedCv, setParsedCv] = useState(null);
+
+  useEffect(() => {
+    async function fetchLatestCv() {
+      if (!firebaseUser) return;
+      try {
+        const idToken = await firebaseUser.getIdToken();
+        const res = await fetch(`${config.api.getBaseUrl()}/api/v1/applications/mine`, {
+          headers: { Authorization: `Bearer ${idToken}` },
+        });
+        const data = await res.json();
+        if (res.ok && data.applications?.length > 0) {
+          const withCv = data.applications.find((a) => a.parsedCv?.name);
+          if (withCv) setParsedCv(withCv.parsedCv);
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    }
+    fetchLatestCv();
+  }, [firebaseUser]);
+
+  if (!parsedCv) return null;
+
+  return (
+    <div className="bg-card border border-border rounded-2xl p-5 mb-6">
+      <h3 className="font-semibold text-foreground mb-3">Your AI-Extracted Profile</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+        {parsedCv.name && (
+          <div>
+            <span className="text-muted-foreground">Name: </span>
+            <span className="text-foreground font-medium">{parsedCv.name}</span>
+          </div>
+        )}
+        {parsedCv.email && (
+          <div>
+            <span className="text-muted-foreground">Email: </span>
+            <span className="text-foreground">{parsedCv.email}</span>
+          </div>
+        )}
+        {parsedCv.experienceYears !== undefined && (
+          <div>
+            <span className="text-muted-foreground">Experience: </span>
+            <span className="text-foreground font-medium">{parsedCv.experienceYears} years</span>
+          </div>
+        )}
+        {parsedCv.education && (
+          <div>
+            <span className="text-muted-foreground">Education: </span>
+            <span className="text-foreground">{parsedCv.education}</span>
+          </div>
+        )}
+        {parsedCv.skills?.length > 0 && (
+          <div className="sm:col-span-2">
+            <span className="text-muted-foreground">Skills: </span>
+            <div className="flex flex-wrap gap-1.5 mt-1">
+              {parsedCv.skills.map((skill, i) => (
+                <span key={i} className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+        {parsedCv.summary && (
+          <div className="sm:col-span-2">
+            <span className="text-muted-foreground">Summary: </span>
+            <p className="text-foreground mt-0.5">{parsedCv.summary}</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function BrowseJobsPage() {
+  const { firebaseUser } = useAuth();
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -38,6 +116,8 @@ export default function BrowseJobsPage() {
     <DashboardShell navItems={navItems} roleLabel="Candidate">
       <h1 className="text-2xl font-bold text-foreground mb-1">Browse Jobs</h1>
       <p className="text-muted-foreground mb-6">Open positions available right now.</p>
+
+      <CvProfileCard firebaseUser={firebaseUser} />
 
       {loading && (
         <div className="flex justify-center py-10">

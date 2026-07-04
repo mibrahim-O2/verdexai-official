@@ -16,4 +16,4 @@ const jobPostSchema = new mongoose.Schema(
 jobPostSchema.index({ status: 1, createdAt: -1 });
 jobPostSchema.index({ hrId: 1, createdAt: -1 });
 
-module.exports = mongoose.model("JobPost", jobPostSchema);
+module.exports = mongoose.models.JobPost || mongoose.model("JobPost", jobPostSchema);
