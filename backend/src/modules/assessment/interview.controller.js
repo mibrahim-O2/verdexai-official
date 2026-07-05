@@ -3,24 +3,12 @@ const Application = require("../../models/Application");
 const JobPost = require("../../models/JobPost");
 const User = require("../../models/User");
 const asyncHandler = require("../../utils/asyncHandler");
-const nodemailer = require("nodemailer");
-
-function createTransporter() {
-  return nodemailer.createTransport({
-    host: process.env.EMAIL_HOST,
-    port: parseInt(process.env.EMAIL_PORT),
-    secure: false,
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
-    },
-  });
-}
+const { Resend } = require("resend");
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 async function sendInterviewEmail(candidate, interview, job) {
-  if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) return;
+  if (!process.env.RESEND_API_KEY) return;
   try {
-    const transporter = createTransporter();
     const dateStr = new Date(interview.interviewDate).toLocaleString("en-PK", {
       weekday: "long",
       year: "numeric",
@@ -31,8 +19,8 @@ async function sendInterviewEmail(candidate, interview, job) {
       timeZone: "Asia/Karachi",
     });
 
-    await transporter.sendMail({
-      from: `"VerdexAI" <${process.env.EMAIL_USER}>`,
+    await resend.emails.send({
+      from: "VerdexAI <onboarding@resend.dev>",
       to: candidate.email,
       subject: `Interview Scheduled — ${job.title}`,
       html: `

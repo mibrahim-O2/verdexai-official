@@ -1,17 +1,10 @@
-const nodemailer = require("nodemailer");
+const { Resend } = require("resend");
 const asyncHandler = require("../../utils/asyncHandler");
 
-function createTransporter() {
-  return nodemailer.createTransport({
-    host: process.env.EMAIL_HOST,
-    port: parseInt(process.env.EMAIL_PORT),
-    secure: false,
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
-    },
-  });
-}
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+const FROM_EMAIL = "VerdexAI <onboarding@resend.dev>";
+const TO_EMAIL = process.env.EMAIL_TO || "mibrahimkhalid306@gmail.com";
 
 // POST /api/v1/contact
 const submitContact = asyncHandler(async (req, res) => {
@@ -21,12 +14,10 @@ const submitContact = asyncHandler(async (req, res) => {
     return res.status(400).json({ success: false, error: "All fields are required." });
   }
 
-  const transporter = createTransporter();
-
-  await transporter.sendMail({
-    from: `"VerdexAI Contact" <${process.env.EMAIL_USER}>`,
-    to: process.env.EMAIL_TO,
-    replyTo: email,
+  await resend.emails.send({
+    from: FROM_EMAIL,
+    to: TO_EMAIL,
+    reply_to: email,
     subject: `[VerdexAI Contact] ${subject}`,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
