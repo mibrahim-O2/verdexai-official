@@ -224,6 +224,17 @@ export default function LandingPage() {
                   Contact
                 </a>
               </li>
+              <li className="nav-item">
+                <a
+                  href="https://github.com/mibrahim-O2/verdexai-official/blob/main/UserGuide.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="nav-link"
+                  style={{ fontSize: "0.85rem" }}
+                >
+                  Official Documentation
+                </a>
+              </li>
               <li className="nav-item" style={{ display: "flex", gap: "0.5rem", alignItems: "center", marginLeft: "1rem" }}>
                 <Link href="/auth/login" className="btn btn-outline" style={{ padding: "0.5rem 1rem", fontSize: "0.85rem" }}>
                   Sign In
@@ -253,6 +264,7 @@ export default function LandingPage() {
             <li><a href="#experience" className="nav-link" onClick={(e) => scrollToSection(e, "experience")}>Services</a></li>
             <li><a href="#projects" className="nav-link" onClick={(e) => scrollToSection(e, "projects")}>Developer</a></li>
             <li><a href="#contact" className="nav-link" onClick={(e) => scrollToSection(e, "contact")}>Contact</a></li>
+            <li><a href="https://github.com/mibrahim-O2/verdexai-official/blob/main/UserGuide.md" target="_blank" rel="noopener noreferrer" className="nav-link">Official Documentation</a></li>
             <li style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", justifyContent: "center" }}>
               <Link href="/auth/login" className="btn btn-outline" style={{ padding: "0.5rem 1rem", fontSize: "0.85rem" }}>Sign In</Link>
               <Link href="/auth/signup" className="btn btn-primary" style={{ padding: "0.5rem 1rem", fontSize: "0.85rem" }}>Sign Up</Link>
@@ -544,7 +556,7 @@ export default function LandingPage() {
               <h3 className="team-name">Muhammad Ibrahim</h3>
               <p className="team-role">Full Stack & AI Engineer</p>
 
-              <p className="developer-bio" style = {{ textAlign: "justify" }}>
+              <p className="developer-bio" style={{ textAlign: "justify" }}>
                 BS Computer Science student at the Institute of Mathematics and Computer
                 Science (IMCS), University of Sindh. Builds AI native, production-grade software
                 from real client facing systems to research driven academic projects with a focus on
@@ -554,7 +566,7 @@ export default function LandingPage() {
               <div className="developer-highlights">
                 <div className="developer-highlight">
                   <i className="fas fa-brain"></i>
-                  <span style = {{ textAlign: "justify", display: "block" }}>
+                  <span style={{ textAlign: "justify", display: "block" }}>
                     <strong>AI Tutor for Personalized Learning Recommendations (PLR)</strong> Project Lead, AI Lab Project 
                     Led a team building a Streamlit based AI Tutor that analyzes quiz performance and generates
                     personalized study recommendations, comparing a Rule-Based Engine against a tuned Decision Tree Classifier
