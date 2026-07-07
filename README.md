@@ -263,3 +263,31 @@ cd frontend && npm run dev
 Visit `http://localhost:3000`
 
 ---
+
+---
+
+## Developer
+
+<div align="center">
+  <img src="https://github.com/mibrahim-O2.png" width="100" style="border-radius:50%"/>
+  <br/>
+  <strong>Muhammad Ibrahim</strong>
+  <br/>
+  Full Stack & AI Engineer
+  <br/><br/>
+
+[![GitHub](https://img.shields.io/badge/GitHub-mibrahim--O2-181717?style=flat-square&logo=github)](https://github.com/mibrahim-O2)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/muhammad-ibrahim-o2)
+[![Email](https://img.shields.io/badge/Email-mibrahimkhalid306@gmail.com-EA4335?style=flat-square&logo=gmail)](mailto:mibrahimkhalid306@gmail.com)
+[![X](https://img.shields.io/badge/X-@MIbraheem__02-000000?style=flat-square&logo=x)](https://x.com/MIbraheem_02)
+
+</div>
+
+---
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2563eb,100:0ea5e9&height=120&section=footer&animation=fadeIn" width="100%"/>
+  <br/>
+  <sub>Built with focus, curiosity, and a lot of debugging — Muhammad Ibrahim © 2026</sub>
+</div>
+
