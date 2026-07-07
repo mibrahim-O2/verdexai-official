@@ -200,3 +200,66 @@ VerdexAI/
             ├── admin/                # Platform management
             └── notifications/        # Email via Resend
 ```
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 20+
+- A MongoDB Atlas account (free tier)
+- A Firebase project with Email/Password Auth enabled
+- An OpenAI API key
+- A Resend account (free tier, for emails)
+
+### Local Setup
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/mibrahim-O2/verdexai-official.git
+cd verdexai-official
+```
+
+**2. Install dependencies**
+```bash
+# Frontend
+cd frontend && npm install
+
+# Backend
+cd ../backend && npm install
+```
+
+**3. Configure environment**
+
+Create `backend/.env` (use `backend/.env.example` as reference):
+```env
+PORT=5000
+NODE_ENV=development
+MONGODB_URI=your-mongodb-connection-string
+FRONTEND_URL=http://localhost:3000
+FIREBASE_PROJECT_ID=your-project-id
+FIREBASE_CLIENT_EMAIL=your-service-account-email
+FIREBASE_PRIVATE_KEY="your-private-key"
+OPENAI_API_KEY=your-openai-key
+RESEND_API_KEY=your-resend-key
+EMAIL_TO=your-email@gmail.com
+```
+
+Create `frontend/.env.local`:
+```env
+NEXT_PUBLIC_API_URL=http://localhost:5000
+NEXT_PUBLIC_FIREBASE_API_KEY=your-firebase-web-api-key
+```
+
+**4. Run both servers**
+```bash
+# Terminal 1 — Backend
+cd backend && npm run dev
+
+# Terminal 2 — Frontend
+cd frontend && npm run dev
+```
+
+Visit `http://localhost:3000`
+
+---
