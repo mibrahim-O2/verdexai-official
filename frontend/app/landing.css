@@ -821,3 +821,17 @@
     animation-duration: 4s;
   }
 }
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr !important;
+  }
+
+  .about-image-container {
+    display: none;
+  }
+}
