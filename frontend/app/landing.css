@@ -827,11 +827,13 @@
     grid-template-columns: 1fr !important;
   }
 
-  .about-cards {
-    grid-template-columns: 1fr !important;
+  .about-image-container {
+    display: block !important;
   }
 
-  .about-image-container {
-    display: none;
+  .about-cards {
+    grid-template-columns: 1fr 1fr !important;
   }
 }
+
+ 
