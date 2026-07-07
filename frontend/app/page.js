@@ -784,7 +784,7 @@ export default function LandingPage() {
               <div className="footer-links">
                 <a href="mailto:mibrahimkhalid306@gmail.com" className="footer-link"><i className="fas fa-envelope"></i> mibrahimkhalid306@gmail.com</a>
                 <a href="tel:+923242991303" className="footer-link"><i className="fas fa-phone"></i> +92 324 2991303</a>
-                <a href="https://x.com/MIbraheem_02" target="_blank" rel="noopener noreferrer" className="footer-link"> <XLogo className="w-4 h-4" />  X (Twitter)</a>
+                <a href="https://x.com/MIbraheem_02" target="_blank" rel="noopener noreferrer" className="footer-link"> <XLogo className="w-4 h-4" />  X-Twitter</a>
                 <a href="https://www.facebook.com/profile.php?id=100085369586705" target="_blank" rel="noopener noreferrer" className="footer-link"><i className="fab fa-facebook-f"></i> Facebook</a>
                 <span className="footer-link" style={{ cursor: "default" }}><i className="fas fa-map-marker-alt"></i> Jamshoro, Sindh, Pakistan</span>
               </div>
