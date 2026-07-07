@@ -263,7 +263,41 @@ cd frontend && npm run dev
 Visit `http://localhost:3000`
 
 ---
+ 
 
+## Documentation
+
+| Document | Description |
+|----------|-------------|
+| [User Guide](./UserGuide.md) | Complete guide for Candidates, HR, and Admins |
+| [Brand Guide](./docs/BRAND_GUIDE.md) | Colors, typography, logo usage |
+| [.env.example](./backend/.env.example) | Environment variable reference |
+
+---
+
+## Deployment
+
+| Service | Platform | URL |
+|---------|----------|-----|
+| Frontend | Vercel | https://verdexai-official.vercel.app |
+| Backend | Railway | https://verdexai-official-production.up.railway.app |
+| Database | MongoDB Atlas | Cloud (Singapore region) |
+
+---
+
+## Screenshots
+
+> *user guide includes full visual walkthrough.which inclueds:*
+
+| Page | 
+|------|
+| Landing Page |
+| Candidate Dashboard | 
+| HR Ranked Candidates | 
+| Assessment Test | 
+| Interview Scheduling |
+
+ 
 ---
 
 ## Developer
