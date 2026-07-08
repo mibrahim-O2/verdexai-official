@@ -41,6 +41,35 @@
 - [Contact & Support](#contact--support)
 
 ---
+## Introduction
+
+VerdexAI is an AI-powered recruitment platform that streamlines the entire hiring process from posting a job to onboarding a hired candidate using intelligent CV parsing, automated scoring, assessment testing, and interview scheduling.
+
+### Who is this guide for?
+
+| Role | Description |
+|------|-------------|
+| **Candidate** | Job seekers who apply to positions, take assessments, and track their applications |
+| **HR / Recruiter** | Hiring managers who post jobs, review AI-ranked candidates, and manage the hiring pipeline |
+| **Admin** | Platform administrators who manage HR accounts and view system statistics |
+
+---
+
+## Getting Started
+
+### Creating an Account
+
+1. Visit [https://verdexai-official.vercel.app](https://verdexai-official.vercel.app)
+2. Click **Sign Up** in the navigation bar ***See the screenshot below ↓***
+
+<p align="center">
+  <img src="Screenshots/landingpage.png" alt="Landing Page" width="900">
+</p>
+
+
+
+
+
 <div align="center">
 
-# comming soon
+# *Processing...*
