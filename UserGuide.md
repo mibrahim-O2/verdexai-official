@@ -70,9 +70,25 @@ VerdexAI is an AI-powered recruitment platform that streamlines the entire hirin
   <img src="Screenshots/landingpage.png" alt="Landing Page" width="900">
 </p>
 
+3. Fill in the registration form:
+   - **Full Name** — your real name
+   - **Email** — a valid email address you have access to
+   - **I am a** — select your role:
+     - **Candidate** — if you are looking for a job
+     - **HR / Recruiter** — if you are hiring
+   - **Password** — minimum 8 characters (use the strength indicator as a guide)
+   - **Confirm Password** — must match exactly  ***See the screenshot below ↓***
 
+  <p align="center">
+  <img src="Screenshots/signupwithfilleddetails.jpeg" alt="Signup Page" width="400">
+</p>
 
+4. Click **Sign Up**
+5. You will be automatically redirected to your role-specific dashboard
 
+> **Note:** *Admin accounts are not self-registered. Contact the platform owner if you need admin access.*
+
+--- 
 
 <div align="center">
 
