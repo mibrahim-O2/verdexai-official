@@ -47,11 +47,15 @@ VerdexAI is an AI-powered recruitment platform that streamlines the entire hirin
 
 ### Who is this guide for?
 
+<div align="center">
+
 | Role | Description |
 |------|-------------|
 | **Candidate** | Job seekers who apply to positions, take assessments, and track their applications |
 | **HR / Recruiter** | Hiring managers who post jobs, review AI-ranked candidates, and manage the hiring pipeline |
 | **Admin** | Platform administrators who manage HR accounts and view system statistics |
+
+</div>
 
 ---
 
