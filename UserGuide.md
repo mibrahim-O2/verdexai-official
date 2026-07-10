@@ -90,6 +90,44 @@ VerdexAI is an AI-powered recruitment platform that streamlines the entire hirin
 
 --- 
 
+### Logging In
+
+1. Click **Sign In** in the navigation bar
+2. Enter your registered email and password
+3. Click **Sign In**
+4. You will be redirected to your dashboard based on your role:
+   - **Candidate** → `/candidate/dashboard`
+   - **HR** → `/hr/dashboard`
+   - **Admin** → `/admin/hr`
+
+<p align="center">
+  <img src="Screenshots/signinpage.jpeg" alt="Signin Page" width="400">
+</p>
+
+---
+
+### Forgot Password
+
+1. On the login page, click **Forgot password?**
+2. Enter your registered email address
+3. Click **Send Reset Link**
+4. Check your inbox for a password reset email from VerdexAI
+5. Click the link in the email and set a new password
+
+<p align="center">
+  <img src="Screenshots/forgetpassowrd.png" alt="Signup Page" width="400">
+</p>
+<p align="center">
+  <img src="Screenshots/resetconfirmation.png" alt="Signup Page" width="400">
+</p>
+
+<p align="center">
+  <img src="Screenshots/resetpaswordemail.png" alt="Signup Page" width="600">
+</p>
+
+---
+
+
 <div align="center">
 
 # *Processing...*
