@@ -478,3 +478,25 @@ Use the dropdown to move a candidate through the pipeline:
 
 ---
 
+### Finalizing a Hire
+
+Once you have decided to hire a candidate:
+
+1. **Prerequisite:** The candidate's status must be **Shortlisted** or **Interview Scheduled** — not just Submitted or Under Review
+2. Click **Finalize Hire** in the sidebar
+3. Select the candidate from the dropdown
+   - Only eligible candidates (shortlisted/interview-scheduled) appear here
+4. Set a **Start Date** for when they will join
+5. Click **Confirm Hire**
+6. The system:
+   - Updates the application status to **Hired**
+   - Creates an onboarding record for this candidate
+   - The candidate now sees the onboarding checklist in their dashboard
+
+<p align="center">
+  <img src="Screenshots/finalizedhire.png" alt="Signup Page" width="900">
+</p>
+
+---
+
+
