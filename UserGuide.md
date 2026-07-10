@@ -388,6 +388,33 @@ Your existing job posts are listed below the creation form.
 ---
 ---
 
+### Ranked Candidates
+
+This is the core AI-powered feature of VerdexAI.
+
+1. Click **Ranked Candidates** in the sidebar
+2. All candidates who applied to your jobs are listed, sorted by AI match score (highest first)
+3. Each row shows:
+   - Candidate name (extracted from CV by AI)
+   - Job they applied to
+   - AI score bar and percentage
+   - Status dropdown
+
+**Expanding a Candidate:**
+Click any candidate row to expand it and see:
+- Email address
+- AI Reasoning — why they received that score
+- Skills — extracted from their CV
+- Experience — years of experience detected
+- Education — highest qualification found
+- Cover Letter — what they wrote
+- Test Score badge (if they have completed an assessment test)
+
+<p align="center">
+  <img src="Screenshots/rankedcandidate&AIanalysis.png" alt="Signup Page" width="900">
+</p>
+---
+
 <div align="center">
 
 # *HR part Processing...*
