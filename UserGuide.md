@@ -568,4 +568,84 @@ Below the stats, all HR accounts are listed.
 
 ---
 
+## Contact & Support
+
+If you encounter any issues or have questions about VerdexAI:
+
+## Contact & Support
+
+If you encounter any issues, have questions, or simply want to get in touch, VerdexAI provides a built-in contact form on the landing page as well as direct communication channels to the developer.The contact form is located at the bottom of the landing page under the **Get In Touch** section. It is available to everyone — no login required.
+
+**How to submit a message:**
+
+1. Scroll to the **Get In Touch** section on the landing page
+2. Fill in the following fields:
+   - **Your Name** — enter your full name
+   - **Your Email** — enter a valid email address so the developer can reply to you
+   - **Subject** — briefly describe the reason for your message
+   - **Message** — write your full message, question, or issue description
+3. Click **Send Message**
+4. The button changes to a loading state while your message is being sent
+5. A green success banner appears confirming your message was received
+
+<p align="center">
+  <img src="Screenshots/contactform.png" alt="Signup Page" width="900">
+</p>
+
+> **What happens next:** Your message is delivered directly to the developer's inbox via the Resend email API. You will receive a personal reply at the email address you provided.
+
+---
+
+### What the Developer Receives
+
+When you submit the contact form, an automatically formatted email is delivered to the developer containing your name, your email address (set as reply-to for easy response), your subject line, and your full message.
+
+<p align="center">
+  <img src="Screenshots/contactCardemail.png" alt="Signup Page" width="700">
+</p>
+
+> The developer typically responds within 24–48 hours.
+
+---
+
+### Direct Contact Channels
+
+**Muhammad Ibrahim — Developer**
+
+Prefer to reach out directly? Use any of the channels below:
+
+| Channel | Details |
+|---------|---------|
+| **Email** | [mibrahimkhalid306@gmail.com](mailto:mibrahimkhalid306@gmail.com) |
+| **Phone** | [+92 324 2991303](tel:+923242991303) |
+| **LinkedIn** | [linkedin.com/in/muhammad-ibrahim-o2](https://linkedin.com/in/muhammad-ibrahim-o2) |
+| **GitHub** | [github.com/mibrahim-O2](https://github.com/mibrahim-O2) |
+| **X (Twitter)** | [@MIbraheem_02](https://x.com/MIbraheem_02) |
+| **Facebook** | [View Profile](https://www.facebook.com/profile.php?id=100085369586705) |
+| **Location** | Jamshoro, Sindh, Pakistan — Remote Friendly |
+
+---
+
+### When Reporting a Bug
+
+To help resolve issues as quickly as possible, please include the following in your message:
+
+- Your **role** in the platform (Candidate, HR, or Admin)
+- The **browser and device** you were using
+- The **exact page URL** where the issue occurred
+- A description of **what you expected** vs. **what actually happened**
+- Any **error messages** visible on screen (a screenshot helps greatly)
+
+
+**Or use the Contact Form on the live platform:**
+[https://verdexai-official.vercel.app/#contact](https://verdexai-official.vercel.app/#contact)
+---
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2563eb,100:0ea5e9&height=100&section=footer&animation=fadeIn" width="100%"/>
+  <br/>
+  <sub>VerdexAI User Guide · Built and maintained independently by Muhammad Ibrahim · 2026</sub>
+</div>
+
+
 
