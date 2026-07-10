@@ -270,7 +270,7 @@ Click **Review Answers** to see a detailed breakdown:
 - **Explanation** shown below each question explaining the correct answer
 
 <p align="center">
-  <img src="Screenshots/testpass80%.png" alt="Signup Page" width="900">
+  <img src="Screenshots/testpass80%25.png" alt="Test Pass 80%" width="900">
 </p>
  
 
