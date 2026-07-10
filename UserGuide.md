@@ -413,8 +413,22 @@ Click any candidate row to expand it and see:
 <p align="center">
   <img src="Screenshots/rankedcandidate&AIanalysis.png" alt="Signup Page" width="900">
 </p>
+
 ---
 
-<div align="center">
+**Updating Status:**
+Use the dropdown to move a candidate through the pipeline:
 
-# *HR part Processing...*
+| Status | Meaning |
+|--------|---------|
+| Submitted | Just applied, not yet reviewed |
+| Under Review | You are currently evaluating them |
+| Shortlisted | You want to proceed with them |
+| Interview Scheduled | Interview has been arranged |
+| Rejected | Not proceeding with this candidate |
+
+> Changing status to **Interview Scheduled** also sends the candidate an automatic email notification.
+
+---
+
+
