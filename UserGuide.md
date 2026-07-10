@@ -499,4 +499,32 @@ Once you have decided to hire a candidate:
 
 ---
 
+### Onboarding Management
+
+After hiring a candidate, track their onboarding progress.
+
+1. Click **Onboarding** in the sidebar
+2. Each hired candidate appears as a card showing:
+   - Their name and the role they were hired for
+   - Start date
+   - Progress bar (X/5 steps done)
+   - Five onboarding steps as clickable buttons
+
+3. **Click any step to toggle it complete/incomplete:**
+   - Offer Letter Sent
+   - Offer Accepted
+   - Documents Submitted
+   - IT Account Setup
+   - First Day Scheduled
+
+4. The progress bar updates in real time
+5. The candidate can see the same steps and progress on their Onboarding page
+
+<p align="center">
+  <img src="Screenshots/hronboarding.png" alt="Signup Page" width="900">
+</p>
+
+
+---
+
 
