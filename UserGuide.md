@@ -170,6 +170,34 @@ Below the stats:
 </p>
 
 ---
+### Applying to a Job
+
+1. On the Browse Jobs page, click **Apply Now** on any job card
+2. You will see the full job description and requirements
+3. Complete the application form:
+
+   **Upload CV (PDF)**
+   - Click the file input and select your resume as a PDF file
+   - Maximum file size: 5MB
+   - Your CV will be automatically parsed by AI to extract your skills, experience, and education
+   - This extracted data is used to generate your match score against the job requirements
+
+   **Cover Letter**
+   - Write a personalized cover letter explaining why you are a good fit
+   - This is optional but strongly recommended
+
+4. Click **Submit Application**
+5. A success message will appear: *"Application submitted! Your CV is being analyzed by AI"*
+6. You will be automatically redirected to your dashboard after a few seconds
+
+<p align="center">
+  <img src="Screenshots/candidatejobapply1.png" alt="Signup Page" width="900">
+  <img src="Screenshots/candidatejobapply2.png" alt="Signup Page" width="900">
+</p>
+
+> **How AI Scoring Works:** Once you submit, VerdexAI sends your CV text and the job requirements to OpenAI. The AI extracts your profile and generates a match score (0–100%) with a reasoning explanation. This score is visible to the HR team on their ranked candidates list.
+
+---
 
 
 <div align="center">
