@@ -191,8 +191,9 @@ Below the stats:
 6. You will be automatically redirected to your dashboard after a few seconds
 
 <p align="center">
-  <img src="Screenshots/candidatejobapply1.png" alt="Signup Page" width="900">
-  <img src="Screenshots/candidatejobapply2.png" alt="Signup Page" width="900">
+  <img src="Screenshots/candidateapplyjob1.png" alt="Signup Page" width="900">
+  <img src="Screenshots/candidateapplyjob2.png" alt="Signup Page" width="900">
+  <img src="Screenshots/candidateapplyjob3.png" alt="Signup Page" width="900">
 </p>
 
 > **How AI Scoring Works:** Once you submit, VerdexAI sends your CV text and the job requirements to OpenAI. The AI extracts your profile and generates a match score (0–100%) with a reasoning explanation. This score is visible to the HR team on their ranked candidates list.
