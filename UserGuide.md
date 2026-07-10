@@ -570,10 +570,6 @@ Below the stats, all HR accounts are listed.
 
 ## Contact & Support
 
-If you encounter any issues or have questions about VerdexAI:
-
-## Contact & Support
-
 If you encounter any issues, have questions, or simply want to get in touch, VerdexAI provides a built-in contact form on the landing page as well as direct communication channels to the developer.The contact form is located at the bottom of the landing page under the **Get In Touch** section. It is available to everyone — no login required.
 
 **How to submit a message:**
@@ -622,7 +618,7 @@ Prefer to reach out directly? Use any of the channels below:
 | **GitHub** | [github.com/mibrahim-O2](https://github.com/mibrahim-O2) |
 | **X (Twitter)** | [@MIbraheem_02](https://x.com/MIbraheem_02) |
 | **Facebook** | [View Profile](https://www.facebook.com/profile.php?id=100085369586705) |
-| **Location** | Jamshoro, Sindh, Pakistan — Remote Friendly |
+| **Location** | Jamshoro, Sindh, Pakistan, Remote Friendly |
 
 ---
 
