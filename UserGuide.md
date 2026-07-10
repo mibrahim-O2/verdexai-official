@@ -524,6 +524,47 @@ After hiring a candidate, track their onboarding progress.
   <img src="Screenshots/hronboarding.png" alt="Signup Page" width="900">
 </p>
 
+---
+
+## Admin Guide
+
+### Admin Dashboard
+
+The admin account has access to platform-wide statistics and HR account management.
+
+1. Login with your admin account
+2. You are redirected to `/admin/hr`
+3. The dashboard shows four real-time stats:
+   - Total HR Accounts
+   - Total Candidates
+   - Total Job Posts
+   - Total Applications
+
+<p align="center">
+  <img src="Screenshots/Adminwelcome.png" alt="Signup Page" width="900">
+</p>
+
+---
+
+### Managing HR Accounts
+
+Below the stats, all HR accounts are listed.
+
+**To suspend an HR account:**
+1. Find the HR account in the list
+2. Click **Suspend**
+3. Status changes to **Suspended** (red badge)
+4. The HR user cannot perform HR actions while suspended
+
+**To reactivate:**
+1. Click **Activate** on a suspended account
+2. Status returns to **Active** (blue badge)
+
+<p align="center">
+  <img src="Screenshots/HRsuspended&active.png" alt="Signup Page" width="900">
+</p>
+
+> **Note:** Admin accounts cannot be suspended through this interface. Only HR and Candidate accounts can be managed here.
 
 ---
 
