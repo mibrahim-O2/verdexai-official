@@ -147,7 +147,7 @@ Below the stats:
 <p align="center">
   <img src="Screenshots/candidateinterviewcarddashboard1.png" alt="Signup Page" width="500">
 </p>
-<p align="center">
+<p align="center">  
   <img src="Screenshots/candidateinterviewcarddashboard2.png" alt="Signup Page" width="500">
 </p>
 
@@ -199,6 +199,26 @@ Below the stats:
 
 ---
 
+### My Tests
+
+When HR sends you an assessment test, it appears in your **My Tests** section.
+
+1. Click **My Tests** in the left sidebar
+2. You will see all test invitations with:
+   - Job title
+   - Time limit
+   - Expiry date
+   - Status (Pending / Completed / Expired)
+3. Click **Start Test** to begin a pending test  
+
+<p align="center">
+  <img src="Screenshots/pendingtest.png" alt="Signup Page" width="900">
+</p>
+
+
+> **Important:** Tests expire after 7 days from when they were sent. Complete them before the expiry date.
+
+---
 
 <div align="center">
 
