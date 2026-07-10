@@ -127,6 +127,32 @@ VerdexAI is an AI-powered recruitment platform that streamlines the entire hirin
 
 ---
 
+## Candidate Guide
+
+### Candidate Dashboard Overview
+
+After logging in, you will see your personal dashboard showing:
+
+| Widget | Description |
+|--------|-------------|
+| **Applications Sent** | Total number of jobs you have applied to |
+| **Shortlisted** | Applications where HR has shortlisted you |
+| **Interviews** | Scheduled interviews you have upcoming |
+| **Hired** | Positions where you have been hired |
+
+Below the stats:
+- **Upcoming Interviews** — shows any scheduled interviews with date, time, platform, and meeting link
+- **All Applications** — complete list of your applications with current status
+
+<p align="center">
+  <img src="Screenshots/candidateinterviewcarddashboard1.png" alt="Signup Page" width="500">
+</p>
+<p align="center">
+  <img src="Screenshots/candidateinterviewcarddashboard2.png" alt="Signup Page" width="500">
+</p>
+
+---
+
 
 <div align="center">
 
