@@ -371,7 +371,21 @@ Below the stats, your job posts are listed with applicant counts.
 > **Tip:** Be specific in your Requirements section — this is what the AI uses to score and rank candidates against.
 
 ---
+### Managing Job Posts
 
+Your existing job posts are listed below the creation form.
+
+**To close a job:**
+1. Find the job in the list with **Open** status
+2. Click **Close** button on the right
+3. Confirm in the popup
+4. The job status changes to **Closed** and candidates can no longer apply
+
+<p align="center">
+  <img src="Screenshots/open&closejobhr.png" alt="Signup Page" width="900">
+</p>
+
+---
 ---
 
 <div align="center">
