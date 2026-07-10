@@ -254,6 +254,30 @@ When HR sends you an assessment test, it appears in your **My Tests** section.
 
 ---
 
+### Viewing Test Results
+
+After submitting, you are redirected to the results page showing:
+
+- **Score percentage** — large display (green if ≥60%, red if below)
+- **Correct/Total** — e.g. "7 out of 10 correct"
+- **Time Taken** — total time you spent
+- **Tab Switches** — number of times you switched away from the test tab
+
+Click **Review Answers** to see a detailed breakdown:
+- Each question displayed with all four options
+- **Correct answer** highlighted in blue with "(Correct)" label
+- **Your wrong answers** highlighted in red with "(Your answer)" label
+- **Explanation** shown below each question explaining the correct answer
+
+<p align="center">
+  <img src="Screenshots/testpass80%.png" alt="Signup Page" width="900">
+</p>
+ 
+
+---
+
+
+
 <div align="center">
 
 # *Processing...*
