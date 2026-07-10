@@ -448,4 +448,33 @@ Use the dropdown to move a candidate through the pipeline:
 
 ---
 
+### Scheduling Interviews
+
+1. Expand a candidate's row on the Ranked Candidates page
+2. Click **Schedule Interview**
+3. A modal opens — fill in the interview details:
+
+   | Field | Description |
+   |-------|-------------|
+   | **Date & Time** | Pick the interview date and time using the date picker |
+   | **Duration** | How long the interview will last (15–120 minutes) |
+   | **Platform** | Google Meet, Zoom, Microsoft Teams, or Other |
+   | **Meeting Link** | Paste the full meeting URL here |
+   | **Notes for Candidate** | Any preparation instructions or information |
+
+4. Click **Schedule & Notify Candidate**
+5. The candidate receives an immediate email with all the details
+6. The candidate's application status updates to **Interview Scheduled**
+
+<p align="center">
+  <img src="Screenshots/scheduleinterview.png" alt="Signup Page" width="900">
+</p>
+
+> **Rescheduling:** If you need to change the time, open the Schedule Interview modal again for the same candidate and fill in the new details. The candidate will receive an updated email marked as "Rescheduled."
+
+<p align="center">
+  <img src="Screenshots/interviewemail.png" alt="Signup Page" width="700">
+</p>
+
+---
 
