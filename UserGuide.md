@@ -272,12 +272,61 @@ Click **Review Answers** to see a detailed breakdown:
 <p align="center">
   <img src="Screenshots/testpass80%25.png" alt="Test Pass 80%" width="900">
 </p>
- 
+
+---
+
+### Interview Details
+
+When HR schedules an interview, you receive:
+
+1. **Email notification** — sent automatically to your registered email with:
+   - Interview date and time (PKT timezone)
+   - Duration
+   - Platform (Google Meet, Zoom, Microsoft Teams, or Other)
+   - Meeting link (clickable)
+   - Notes from HR
+
+2. **Dashboard card** — visible in the **Upcoming Interviews** section on your dashboard showing all the same details, with a **Join Meeting** link
+
+<p align="center">
+  <img src="Screenshots/candidateinterviewcarddashboard1.png" alt="Signup Page" width="900">
+</p>
+
+> **Tip:** Save the meeting link before the interview day. Join 5 minutes early to test your audio and video.
+
+
+<p align="center">
+  Candidate Received Email
+  <img src="Screenshots/interviewemail.png" alt="Signup Page" width="900">
+</p>
+
+---
+
+### Candidate Onboarding
+
+After being hired, your onboarding checklist becomes visible.
+
+1. Click **Onboarding** in the left sidebar
+2. Your onboarding card shows:
+   - Role and department you were hired for
+   - Start date (if set by HR)
+   - Progress bar showing overall completion
+   - Individual steps with green checkmarks for completed ones:
+     - Offer Letter Sent
+     - Offer Accepted
+     - Documents Submitted
+     - IT Account Setup
+     - First Day Scheduled
+
+<p align="center">
+  <img src="Screenshots/candidateonboarding.png" alt="Signup Page" width="900">
+</p>
+
+> **Note:** The steps are updated by your HR team. You cannot toggle them yourself — contact HR if there is a discrepancy.
 
 ---
 
 
-
 <div align="center">
 
-# *Processing...*
+# *HR part Processing...*
