@@ -430,5 +430,22 @@ Use the dropdown to move a candidate through the pipeline:
 > Changing status to **Interview Scheduled** also sends the candidate an automatic email notification.
 
 ---
+### Sending Assessment Tests
+
+1. Expand a candidate's row on the Ranked Candidates page
+2. Click **Send Assessment Test**
+3. VerdexAI automatically:
+   - Generates 10 MCQ questions relevant to the job using AI
+   - Sends the invitation to the candidate (visible in their My Tests section)
+   - Sets a 30-minute time limit and 7-day expiry
+4. A success alert confirms the invitation was sent
+
+<p align="center">
+  <img src="Screenshots/sendassesment.png" alt="Signup Page" width="900">
+</p>
+
+> **Note:** If questions already exist for this job, the same pool is reused. Each job has one shared question pool to ensure consistency.
+
+---
 
 
