@@ -325,7 +325,26 @@ After being hired, your onboarding checklist becomes visible.
 > **Note:** The steps are updated by your HR team. You cannot toggle them yourself — contact HR if there is a discrepancy.
 
 ---
+## HR Guide
 
+### HR Dashboard Overview
+
+The HR dashboard gives you a real-time overview of your hiring pipeline:
+
+| Stat | Description |
+|------|-------------|
+| **Active Job Posts** | Jobs you have posted that are currently open |
+| **Total Applicants** | All candidates who applied to your jobs |
+| **Shortlisted** | Candidates you have marked as shortlisted or interview-scheduled |
+| **Hired** | Candidates you have finalized as hired |
+
+Below the stats, your job posts are listed with applicant counts.
+
+<p align="center">
+  <img src="Screenshots/Hrdashboard.png" alt="Signup Page" width="900">
+</p>
+
+---
 
 <div align="center">
 
