@@ -153,6 +153,24 @@ Below the stats:
 
 ---
 
+### Browsing Jobs
+
+1. Click **Browse Jobs** in the left sidebar
+2. All open job positions are displayed as cards showing:
+   - Job title
+   - Department
+   - Brief description preview
+3. If you have previously applied with a CV, your **AI-Extracted Profile** will appear at the top showing your skills, experience, and education as parsed by the AI
+
+<p align="center">
+  <img src="Screenshots/candidatebrowsjob1.png" alt="Signup Page" width="900">
+</p>
+<p align="center">
+  <img src="Screenshots/candidatebrowsjob2.png" alt="Signup Page" width="900">
+</p>
+
+---
+
 
 <div align="center">
 
