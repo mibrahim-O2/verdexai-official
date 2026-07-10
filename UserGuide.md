@@ -346,6 +346,34 @@ Below the stats, your job posts are listed with applicant counts.
 
 ---
 
+### Creating a Job Post
+
+1. Click **Job Postings** in the left sidebar
+2. Fill in the **Create New Job Post** form:
+
+   | Field | Description |
+   |-------|-------------|
+   | **Job Title** | Clear, specific title (e.g. "Python Developer") |
+   | **Department** | Department or team (e.g. "Engineering") |
+   | **Description** | Full role description — what the candidate will do |
+   | **Requirements** | Skills, experience, qualifications required |
+
+3. Click **Publish Job**
+4. The job appears immediately in the **Your Job Posts** list below
+5. Candidates can now see and apply to this job
+
+<p align="center">
+  <img src="Screenshots/hrjobpost1.png" alt="Signup Page" width="900">
+  <img src="Screenshots/hrjobpost2.png" alt="Signup Page" width="900">
+  <img src="Screenshots/hrjobpost3.png" alt="Signup Page" width="900">
+</p>
+
+> **Tip:** Be specific in your Requirements section — this is what the AI uses to score and rank candidates against.
+
+---
+
+---
+
 <div align="center">
 
 # *HR part Processing...*
