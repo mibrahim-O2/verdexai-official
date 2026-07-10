@@ -40,11 +40,8 @@ VerdexAI is a full-stack AI-powered recruitment platform built as a personal pro
 
 ---
 <div align="center">
-  
-## 🌍Live Application
-*click below*
-↓
-### [verdexai-official.vercel.app](https://verdexai-official.vercel.app)
+
+**[🌍Live Application →](https://verdexai-official.vercel.app)**&ensp;|&ensp;**[Go to Documentation →](./UserGuide.md)**
 
 ![Status](https://img.shields.io/badge/status-live-brightgreen?style=flat-square)
 ![Backend](https://img.shields.io/badge/backend-railway-blueviolet?style=flat-square)
@@ -300,9 +297,9 @@ Visit `http://localhost:3000`
  
 ---
 
-## Developer
-
 <div align="center">
+
+  ## Developer
   <img src="https://github.com/mibrahim-O2.png" width="100" style="border-radius:50%"/>
   <br/>
   <strong>Muhammad Ibrahim</strong>
