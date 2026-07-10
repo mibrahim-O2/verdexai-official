@@ -221,6 +221,39 @@ When HR sends you an assessment test, it appears in your **My Tests** section.
 
 ---
 
+
+### Taking an Assessment Test
+
+1. Click **Start Test** on a pending invitation
+2. The test opens in a focused interface showing:
+   - Job title in the top bar
+   - Countdown timer (top right — turns red when under 2 minutes)
+   - Tab switch counter (increases if you switch browser tabs)
+   - Question progress bar
+
+3. **Answering Questions:**
+   - Read the question carefully
+   - Click one of the four options (A, B, C, D) to select your answer
+   - Selected answers are highlighted in blue
+   - Use **Previous** and **Next** buttons to navigate between questions
+   - Use the numbered dots below to jump directly to any question
+   - Answered questions show as filled dots, unanswered as empty
+
+  <p align="center">
+  <img src="Screenshots/testwithBoption.png" alt="Signup Page" width="900">
+</p>
+
+4. **Submitting:**
+   - Click **Submit Test** on the last question (or any question using the submit button)
+   - If you have unanswered questions, a confirmation prompt appears
+   - The test auto-submits when the timer reaches zero
+
+5. **Proctoring:** The system tracks how many times you switch browser tabs. Keep the test tab active throughout.
+
+> **Important:** You can only submit a test once. Once submitted, you cannot retake it.
+
+---
+
 <div align="center">
 
 # *Processing...*
