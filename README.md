@@ -260,8 +260,22 @@ cd frontend && npm run dev
 Visit `http://localhost:3000`
 
 ---
- 
 
+## Demo Video
+
+A complete walkthrough of **VerdexAI** – the AI-Powered Recruitment Platform covering the full end-to-end hiring process (Job Posting → AI Resume Parsing → Candidate Matching → Assessment → Final Hiring Decision) is available on YouTube.
+
+**Click the thumbnail below to watch ↓**
+
+[![Watch VerdexAI Demo](https://img.youtube.com/vi/s-M_aoWDOkM/maxresdefault.jpg)](https://youtu.be/s-M_aoWDOkM)
+
+<p align="center">
+  <a href="https://youtu.be/s-M_aoWDOkM">
+    <img src="https://img.shields.io/badge/Watch%20on-YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch VerdexAI Demo">
+  </a>
+</p>
+ 
+---
 ## Documentation
 
 | Document | Description |
