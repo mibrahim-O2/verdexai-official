@@ -13,7 +13,7 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- DemoVideo
+- [DemoVideo](#demo-video)
 - [Getting Started](#getting-started)
   - [Creating an Account](#creating-an-account)
   - [Logging In](#logging-in)
