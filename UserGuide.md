@@ -4,7 +4,7 @@
 
 <div align="center">
 
-**[🌍Live Application →](https://verdexai-official.vercel.app)**&ensp;|&ensp;**[Back to README →](./README.md)**
+**[🌍 Live Application →](https://verdexai-official.vercel.app)** &ensp;|&ensp; **[▶️ Watch Demo →](https://youtu.be/s-M_aoWDOkM)** &ensp;|&ensp; **[Back to README →](./README.md)**
 
 </div>
 
