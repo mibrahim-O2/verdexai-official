@@ -321,8 +321,8 @@ A complete walkthrough of **VerdexAI**  the AI-Powered Recruitment Platform cove
 
 <div align="center">
 
-  ## Developer
-  <img src="https://github.com/mibrahim-O2.png" width="100" style="border-radius:50%"/>
+  #  *Mind behind *VerdexAI*.*
+  <img src="https://github.com/mibrahim-O2.png" width="300" style="border-radius:50%"/>
   <br/>
   <strong>Muhammad Ibrahim</strong>
   <br/>
