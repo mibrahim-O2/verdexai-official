@@ -322,12 +322,13 @@ A complete walkthrough of **VerdexAI**  the AI-Powered Recruitment Platform cove
 <div align="center">
 
   #  *Mind behind *VerdexAI*.*
-  <img src="https://github.com/mibrahim-O2.png" width="300" style="border-radius:50%"/>
-  <br/>
-  <strong>Muhammad Ibrahim</strong>
+   <strong>Muhammad Ibrahim</strong>
   <br/>
   Full Stack & AI Engineer
   <br/><br/>
+  <img src="https://github.com/mibrahim-O2.png" width="300" style="border-radius:50%"/>
+  <br/>
+ 
 
 [![GitHub](https://img.shields.io/badge/GitHub-mibrahim--O2-181717?style=flat-square&logo=github)](https://github.com/mibrahim-O2)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/muhammad-ibrahim-o2)
