@@ -13,6 +13,7 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
+- DemoVideo
 - [Getting Started](#getting-started)
   - [Creating an Account](#creating-an-account)
   - [Logging In](#logging-in)
@@ -57,6 +58,27 @@ VerdexAI is an AI-powered recruitment platform that streamlines the entire hirin
 
 </div>
 
+---
+
+## Demo Video
+
+A complete walkthrough of **VerdexAI**  the AI-Powered Recruitment Platform covering the full end-to-end hiring process.
+
+*Job Posting → AI Resume Parsing → Candidate Matching → Assessment → Final Hiring Decision* is available on YouTube.
+
+<div align="center">
+  
+**Click the thumbnail below to watch ↓**
+</div>
+
+[![Watch VerdexAI Demo](https://img.youtube.com/vi/s-M_aoWDOkM/maxresdefault.jpg)](https://youtu.be/s-M_aoWDOkM)
+
+<p align="center">
+  <a href="https://youtu.be/s-M_aoWDOkM">
+    <img src="https://img.shields.io/badge/Watch%20on-YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch VerdexAI Demo">
+  </a>
+</p>
+ 
 ---
 
 ## Getting Started
