@@ -263,9 +263,14 @@ Visit `http://localhost:3000`
 
 ## Demo Video
 
-A complete walkthrough of **VerdexAI** – the AI-Powered Recruitment Platform covering the full end-to-end hiring process (Job Posting → AI Resume Parsing → Candidate Matching → Assessment → Final Hiring Decision) is available on YouTube.
+A complete walkthrough of **VerdexAI**  the AI-Powered Recruitment Platform covering the full end-to-end hiring process.
 
+*Job Posting → AI Resume Parsing → Candidate Matching → Assessment → Final Hiring Decision* is available on YouTube.
+
+<div align="center">
+  
 **Click the thumbnail below to watch ↓**
+</div>
 
 [![Watch VerdexAI Demo](https://img.youtube.com/vi/s-M_aoWDOkM/maxresdefault.jpg)](https://youtu.be/s-M_aoWDOkM)
 
