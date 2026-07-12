@@ -47,6 +47,8 @@ VerdexAI is a full-stack AI-powered recruitment platform built as a personal pro
 ![Status](https://img.shields.io/badge/status-live-brightgreen?style=flat-square)
 ![Backend](https://img.shields.io/badge/backend-railway-blueviolet?style=flat-square)
 ![Frontend](https://img.shields.io/badge/frontend-vercel-black?style=flat-square)
+[![Documentation](https://img.shields.io/badge/documentation-github-blue?style=flat-square)](./UserGuide.md)
+[![Demo Video](https://img.shields.io/badge/demo-youtube-red?style=flat-square&logo=youtube&logoColor=white)](https://youtu.be/s-M_aoWDOkM)
 
 ---
 
